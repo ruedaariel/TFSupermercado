@@ -1,0 +1,279 @@
+body {
+
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(184, 241, 201);
+}
+
+
+/*Hacer un menú de navegación en HTML*/
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(5, 54, 54);
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5px;
+    border-radius: 5%;
+
+}
+
+.logo {
+    background-color: rgb(5, 54, 54);
+    width: 15%;
+    height: 100%;
+}
+
+.logo>img {
+    width: 80%;
+    height: 100%;
+}
+
+.menu {
+    background-color: rgb(5, 54, 54);
+    width: 85%;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(5, 54, 54);
+}
+
+nav ul li a {
+    display: inline-flex;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 150px;
+}
+
+.form_contacto {
+
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+
+.contacto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 87%;
+    margin-right: 150px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(155, 186, 155);
+    box-shadow: 0px 0px 6px #000;
+}
+
+.formulario {
+    width: 35%;
+    height: 87%;
+    margin-left: 150px;
+    border-radius: 10Px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fbfbfb;
+    padding-left: 20px;
+    box-shadow: 0px 0px 6px #000;
+}
+
+input {
+    background-color: #fbfbfb;
+    width: 98%;
+    height: 5%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgreen;
+    /* margin-top: 10px; */
+    padding-left: 10px;
+    /* margin-bottom: 20px; */
+}
+
+
+textarea {
+    background-color: #fbfbfb;
+    width: 99%;
+    height: 17%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgreen;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+label {
+    display: block;
+    float: center;
+}
+
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+  
+    text-transform: uppercase;
+    background-color: darkgreen;
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 10px;
+    width: 98%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+    
+}
+
+
+h1 {
+    font-size: 30px;
+    text-align: letf;
+    padding-bottom: 5px;
+    color: darkgreen;
+}
+
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #0e0e0e;
+}
+
+
+p {
+    font-size: 14px;
+    color: #0e0e0e;
+}
+
+
+/* estilos para footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(5, 54, 54);
+    margin-top: 10px;
+}
+
+.divFooter {
+    width: 25%;
+}
+
+.divFooter li {
+    list-style: none;
+}
+
+.divFooter a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 150px;
+    text-decoration: none;
+}
+
+.divFooter p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seguinos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.seguinos a {
+    color: #ede4e4;
+    text-decoration: none;
+    width: 20px;
+}
+
+.contacto>img {
+
+    margin: auto;
+    border-radius: 10px;
+    height: 60%;
+    width: 95%;
+    
+}
+
+.p_contacto {
+
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    height: 45%;
+    width: 95%;
+    
+}
+
+.p_contacto > p{
+
+   
+        font-size: 17px;
+        color: #0e0e0e;
+        padding-left: 10px;
+    
+
+
+
+}
+
+/* parametros para cambiar el formato de swal   */
+
+.swal2-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px !important;
+    color: green !important;
+}
+
+.swal2-confirm {
+    background-color: rgb(92, 215, 163) !important;
+    font-size: 18px !important;
+}
+
+.swal2-cancel {
+    background-color: rgb(33, 143, 97) !important;
+    font-size: 18px !important;
+}
+
+.swal2-modal {
+    height: 70%;
+    width: 50%;
+}

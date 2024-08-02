@@ -1,0 +1,39 @@
+/* parametros para pagina en construccion   */
+
+.construccion {
+
+   
+    height: 100vh;
+}
+
+.enconstruccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 55%;
+    background: rgb(184, 241, 201);
+}
+
+.info_const {
+
+    width: 49%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info_const > img {
+   
+    border-radius: 10px;
+    height: 90%;
+    width: 80%;
+    opacity: 80%;
+    border-color: darkgreen;
+    box-shadow: 0px 0px 6px #000;
+   
+}

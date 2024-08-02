@@ -1,0 +1,452 @@
+
+
+
+/*Hacer un menú de navegación en HTML*/
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(5, 54, 54);
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5px;
+    border-radius: 5%;
+
+
+}
+
+.logo {
+    background-color: rgb(5, 54, 54);
+    width: 15%;
+    height: 100%;
+}
+
+.logo > a img {
+    width: 80%;
+    height: 100%;
+}
+
+.menu {
+    background-color: rgb(5, 54, 54);
+    width: 85%;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgb(5, 54, 54);
+}
+
+nav ul li a {
+    display: inline-flex;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    width: 150px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(184, 241, 201);
+    width: 100%;
+
+}
+
+.imagen {
+    width: 45%;
+    height: 100%;
+    text-align: center;
+}
+
+.imagen>img {
+    width: 90%;
+    height: 100%;
+    border-radius: 3%;
+}
+
+.texto {
+    width: 45%;
+    height: 100%;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: gray;
+    margin: 10px 10px 25px;
+}
+
+p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    margin: 10px 10px 25px;
+    color: gray;
+    line-height: 1.8em;
+    font-weight: bolder;
+}
+
+.texto>ul {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px 15px 40px;
+    color: gray;
+}
+
+.agricultura {
+    width: 100%;
+    margin: 10px auto 10px auto;
+    position: relative;
+}
+
+.agricultura>img {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.sobreimpresoIzq {
+    width: 35%;
+    height: 70%;
+    border: solid 1px black;
+    box-shadow: 0px 0px 6px #000;
+    position: absolute;
+    top: 15%;
+    bottom: 10%;
+    left: 60%;
+    border-radius: 1%;
+    background-color: #fff;
+    opacity: 50%;
+}
+
+.sobreimpresoIzq p {
+    font-size: 18px;
+    margin: 10px 10px 25px;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sobreimpresoDer {
+    width: 35%;
+    height: 50%;
+    border: solid 1px black;
+    box-shadow: 0px 0px 6px #000;
+    position: absolute;
+    top: 15%;
+    bottom: 10%;
+    left: 5%;
+    border-radius: 1%;
+    background-color: #fff;
+    opacity: 50%;
+}
+
+.sobreimpresoDer p {
+    font-size: 18px;
+    margin: 10px 10px 25px;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    background-color: blue;
+    height: 70%;
+    border-radius: 2%;
+    margin-top: 10px;
+    border: solid 1px black;
+    box-shadow: 0px 0px 6px #000;
+    background-color: #fff;
+    opacity: 80%;
+}
+
+.columna span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: gray;
+    padding: 20px;
+}
+
+.columna p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: gray;
+    margin: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(5, 54, 54);
+    margin-top: 10px;
+}
+
+.divFooter {
+    width: 25%;
+}
+
+.divFooter li {
+    list-style: none;
+}
+
+.divFooter a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 150px;
+    text-decoration: none;
+}
+
+.divFooter p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seguinos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.seguinos a {
+    color: #ede4e4;
+    text-decoration: none;
+    width: 20px;
+}
+
+/* /* ************* estilos para pagina compras ************** */
+
+.contenedorCompra {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+    width: auto;
+    /* border: #000;
+    border-style: solid; */
+
+
+
+
+}
+
+.card {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 31%;
+    border: #4b4848;
+    border-style: solid;
+    border-radius: 2%;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 6px #000;
+
+
+}
+
+.card img {
+
+    width: 70%;
+
+}
+
+.imgCard {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    /*border: #121212;
+    border-style: solid;*/
+
+
+
+}
+
+.botones {
+
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: #121212;
+    /*border-style: solid;
+    align-items: center; */
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.card p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font: size 18px;
+    text-align: center;
+    
+
+}
+
+.card button {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: darkgreen;
+    border-radius: 6Px;
+    margin-bottom: 5px;
+    width: 90%;
+    cursor: pointer
+}
+
+.card input {
+
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: rgb(191, 209, 191);
+    border-radius: 6Px;
+
+}
+
+.precio {
+
+
+    border-style: solid;
+    width: 95%;
+    padding: 5px;
+    border-radius: 8Px;
+    background-color: green;
+    color: #fff;
+    font-size: 15px;
+}
+
+.stock {
+
+
+    width: 90%;
+    padding: 5px;
+    border-radius: 8Px;
+    
+
+
+}
+
+.stock_cero {
+
+
+    width: 90%;
+    padding: 5px;
+    border-radius: 8Px;
+    background-color: lightcoral;
+    color: #fff;
+
+
+}
+
+.pieTarjeta {
+
+
+    width: 95%;
+    padding: 5px;
+    border-radius: 8Px;
+    background-color: rgb(155, 186, 155);
+    color: #060606;
+    font-size: 15px;
+    text-align: center;
+
+} 
+
+
+/* stilos de la tabla */
+
+/* table {
+    background: rgb(175, 250, 210);
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-collapse: collapse;
+    text-align: center;
+
+
+}
+
+th {
+    background-color: rgb(56, 213, 158);
+    height: 35px;
+    border-bottom: 1px solid rgb(210, 220, 250);
+    color: rgb(120, 120, 120);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    color: rgb(22, 122, 89);
+    height: 30px;
+    border: 0.5px solid rgba(240, 240, 240, 10);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+table tr:nth-child(odd) {
+    background: #bef8eb;
+}
+
+table tr:nth-child(even) {
+    background: #def4f1;
+} */
+
+
+/* parametros para cambiar el formato de swal   */
+
+/* .swal2-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px !important;
+    color: green !important;
+}
+
+.swal2-confirm {
+    background-color: rgb(92, 215, 163) !important;
+    font-size: 18px !important;
+}
+
+.swal2-cancel {
+    background-color: rgb(33, 143, 97) !important;
+    font-size: 18px !important;
+}
+
+.swal2-modal {
+    height: 70%;
+    width: 50%;
+}  */
+

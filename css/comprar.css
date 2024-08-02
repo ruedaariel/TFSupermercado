@@ -1,0 +1,233 @@
+/* ************* estilos para pagina compras ************** */
+
+.contenedorCompra {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+    width: auto;
+    /* border: #000;
+    border-style: solid; */
+
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 31%;
+    border: #4b4848;
+    border-style: solid;
+    border-radius: 2%;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 6px #000;
+           
+}
+
+.card img {
+
+    width: 70%;
+    
+}
+
+
+.card > p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font: size 19px;
+    text-align: center;
+    
+
+}
+
+
+.card button {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: darkgreen;
+    border-radius: 6Px;
+    margin-bottom: 5px;
+    width: 90%;
+    cursor: pointer
+}
+
+
+.card input {
+
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: rgb(191, 209, 191);
+    border-radius: 6Px;
+
+}
+
+.imgCard {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    /*border: #121212;
+    border-style: solid;*/
+
+
+
+}
+
+.card_oferta {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 31%;
+    border: #4b4848;
+    border-style: solid;
+    border-radius: 2%;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 6px #000;
+    background-image: url("../Imagenes/oferta_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+.card_oferta img {
+
+    width: 70%;
+    opacity: 80%;
+        
+}
+
+.card_oferta p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font: size 19px;
+    text-align: center;
+
+}
+
+.card_oferta button {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: darkgreen;
+    border-radius: 6Px;
+    margin-bottom: 5px;
+    width: 90%;
+    cursor: pointer
+}
+
+.card_oferta input {
+
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: rgb(191, 209, 191);
+    border-radius: 6Px;
+
+}
+
+.botones {
+
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: #121212;
+    /*border-style: solid;
+    align-items: center; */
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.precio {
+
+
+    border-style: solid;
+    width: 90%;
+    padding: 5px;
+    border-radius: 8Px;
+    background-color: green;
+    color: #fff;
+}
+
+.stock {
+
+
+    width: 90%;
+    padding: 5px;
+    border-radius: 8Px;
+    color: #000;
+    font-size: 25px;
+
+
+}
+
+
+
+.stock_cero {
+
+
+    width: 90%;
+    padding: 5px;
+    border-radius: 8Px;
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 25px;
+
+
+}
+
+.pieTarjeta {
+
+
+    width: 95%;
+    padding: 5px;
+    border-radius: 8Px;
+    background-color: rgb(155, 186, 155);
+    color: #060606;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+/* parametros para cambiar el formato de swal   */
+
+.swal2-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px !important;
+    color: green !important;
+}
+
+.swal2-confirm {
+    background-color: rgb(92, 215, 163) !important;
+    font-size: 18px !important;
+}
+
+.swal2-cancel {
+    background-color: rgb(33, 143, 97) !important;
+    font-size: 18px !important;
+}
+
+.swal2-denny {
+    background-color: rgb(33, 143, 97) !important;
+    font-size: 18px !important;
+}
+
+.swal2-modal {
+    height: 70%;
+    width: 50%;
+} 
