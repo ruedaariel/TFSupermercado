@@ -77,18 +77,18 @@ for (let i = 0; i < arrayPrecios.length; i++) {
 
             Swal.fire({
                 icon: "error",
-                title: `El stock máximo disponible es ${arrayStock[indice]}. Y has seleccionado ${todosLosInputs[indice].value}. `,
+                title: `El stock máximo disponible de ${ arrayProductos[indice]} es ${arrayStock[indice]}. Y has seleccionado ${todosLosInputs[indice].value}. `,
 
             });
 
 
-            todosLosInputs[indice].value = ""; // reseteo el input
+            todosLosInputs[indice].value = 0; // reseteo el input
         } else {
 
             // actualizo el stock
-            arrayStock[indice] -= todosLosInputs[indice].value;
+            arrayStock[indice] -= parseInt(todosLosInputs[indice].value);
             //se genera un arreglo con las cantidades selecciondas
-            carritoCantidad[indice] = todosLosInputs[indice].value;// guardo la cantidad seleccionada para el carrito
+            carritoCantidad[indice] = parseInt(todosLosInputs[indice].value);// guardo la cantidad seleccionada para el carrito
             console.log(carritoCantidad[indice]);
             // selecciono el p que muestra stock y lo actualizo
 
@@ -104,7 +104,7 @@ for (let i = 0; i < arrayPrecios.length; i++) {
             }
 
             itemsComprados++;
-            costoTotal += arrayPrecios[indice] * todosLosInputs[indice].value;
+            costoTotal += arrayPrecios[indice] * parseInt(todosLosInputs[indice].value);
             // usamos una de las opciones de la libreri que se nos sugerío para mostrar un alerta
 
 
@@ -211,7 +211,7 @@ function generaDivCard(producto, precio, stock, i, oferta) {
     inputBotones.setAttribute("placeholder", "Ctdad");
     // saco la condicion de max = Stock para cumplir con la 
     //consigna de mostrar alerta si se selecciona cantidad mayor al stock existente
-
+    inputBotones.setAttribute("value", "0");
     inputBotones.setAttribute("min", "0");
 
     // creo el boton comprar

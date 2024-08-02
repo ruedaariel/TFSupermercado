@@ -17,6 +17,7 @@ btnEnviar.addEventListener("click", function (e) {
 
         if (formulario[i].value.trim().length == 0 || mensaje.value.trim().length == 0) {
             errorAlerta();
+            return;
         } else {
 
             // valido que haya al menos un @ en el input correo
@@ -24,6 +25,7 @@ btnEnviar.addEventListener("click", function (e) {
             if (!document.getElementById("email").value.includes("@") || document.getElementById("telefono").value.length > 10) {
 
                 errorAlerta();
+                return;
             }
         }
     }
@@ -34,7 +36,7 @@ btnEnviar.addEventListener("click", function (e) {
         datosGrabar[i] = formulario[i].value.trim();
 
     }
-    datosGrabar[j] = mensaje.value.trim();
+    datosGrabar[j] = mensaje.value.trim(); // anexo el mensaje al final
 
     let blob = new Blob([datosGrabar], { type: "text/plain;charset=utf-8" }); //corchetes para que separe con ,
 
