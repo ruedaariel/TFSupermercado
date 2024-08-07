@@ -127,7 +127,7 @@ let btnPagar = document.getElementById("pagar"); // traigo el boton enviar
 
 btnPagar.addEventListener("click", function (e) {
     //e.preventDefault();
-    console.log("**************")
+    //console.log("**************")
     Swal.fire({
         icon: "success",
         title: "Su compra ha sido confirmada?",

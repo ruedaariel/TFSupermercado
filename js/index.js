@@ -89,7 +89,7 @@ for (let i = 0; i < arrayPrecios.length; i++) {
             arrayStock[indice] -= parseInt(todosLosInputs[indice].value);
             //se genera un arreglo con las cantidades selecciondas
             carritoCantidad[indice] = parseInt(todosLosInputs[indice].value);// guardo la cantidad seleccionada para el carrito
-            console.log(carritoCantidad[indice]);
+            //console.log(carritoCantidad[indice]);
             // selecciono el p que muestra stock y lo actualizo
 
             if (arrayStock[indice] == 0) {
@@ -129,7 +129,7 @@ for (let i = 0; i < arrayPrecios.length; i++) {
             // actualizo stock y reseteo input
             let pSelecionado = document.getElementById(`st${indice}`);
             pSelecionado.replaceChildren(`Stock: ${arrayStock[indice]}`);
-            todosLosInputs[indice].value = "";
+            todosLosInputs[indice].value = 0;
 
         }
     });
